@@ -1,0 +1,16 @@
+# Directorios generados por colcon (se regeneran con `colcon build`)
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.pyc
+
+# Zone.Identifier (metadata de Windows al copiar archivos desde WSL)
+*Zone.Identifier*
+.vscode/
+.vscode/
+.claude/
+.vscode/
+.claude/

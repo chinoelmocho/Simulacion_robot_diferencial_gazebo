@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="Bobert">
+
+    <link name="wheel_left">
+        <inertial>
+            <origin xyz="-1.4935609762289915e-08 -1.8299848179026412e-08 0.026516369504124688" rpy="0.0 -0.0 0.0" />
+            <mass value="7.638842452373928" />
+            <inertia ixx="0.012512657679018685" iyy="0.012512658804138987" izz="0.02157054049252609" ixy="-6.789136301754706e-09" iyz="-1.6808125724576766e-10" ixz="-2.4400822875555903e-10" />
+        </inertial>
+        <visual name="wheel_left_visual">
+            <origin xyz="0.0018014094929013603 -0.0003077447108111464 0.02818398496719789" rpy="3.141592653589793 -1.2246467991473532e-16 3.141592653589793" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/wheel_left.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="wheel_left_collision">
+            <origin xyz="0.0018014094929013603 -0.0003077447108111464 0.02818398496719789" rpy="3.141592653589793 -1.2246467991473532e-16 3.141592653589793" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/wheel_left.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+
+    <link name="wheel_rigth">
+        <inertial>
+            <origin xyz="4.535097122726484e-08 -8.975340488603934e-08 0.026516362985275654" rpy="0.0 -0.0 0.0" />
+            <mass value="7.638838185872932" />
+            <inertia ixx="0.012512652636455568" iyy="0.01251263298450045" izz="0.02157051054295618" ixy="1.8605187536435697e-08" iyz="-6.805375860063911e-09" ixz="3.774993054261877e-09" />
+        </inertial>
+        <visual name="wheel_rigth_visual">
+            <origin xyz="4.222558303013102e-11 6.0015814540292925e-12 0.02450000000000058" rpy="2.7755575615629007e-16 2.775557561562944e-17 -1.844111719858924e-30" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/wheel_rigth.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="wheel_rigth_collision">
+            <origin xyz="4.222558303013102e-11 6.0015814540292925e-12 0.02450000000000058" rpy="2.7755575615629007e-16 2.775557561562944e-17 -1.844111719858924e-30" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/wheel_rigth.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+
+
+    <link name="rotatori_suport_left">
+        <inertial>
+            <origin xyz="-4.076282717591084e-08 0.00888320645449534 0.012446260582561007" rpy="0.0 -0.0 0.0" />
+            <mass value="0.21087231289276429" />
+            <inertia ixx="9.649552760798881e-05" iyy="7.966891161717473e-05" izz="0.00011210414142136423" ixy="1.565786042490025e-10" iyz="-2.7438068639805717e-05" ixz="3.06575255416483e-10" />
+        </inertial>
+        <visual name="rotatori_suport_left_visual">
+            <origin xyz="3.552713678800501e-16 5.151434834260726e-16 -0.0020000000000000373" rpy="-3.944304526105064e-31 -3.6977854932234876e-31 1.5707963267948963" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/rotatori_suport_left.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="rotatori_suport_left_collision">
+            <origin xyz="3.552713678800501e-16 5.151434834260726e-16 -0.0020000000000000373" rpy="-3.944304526105064e-31 -3.6977854932234876e-31 1.5707963267948963" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/rotatori_suport_left.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="rotatori_suport_rigth">
+        <inertial>
+            <origin xyz="-4.076282774434503e-08 0.008883206454495411 0.012446260582561042" rpy="0.0 -0.0 0.0" />
+            <mass value="0.21087231289276429" />
+            <inertia ixx="9.649552760798794e-05" iyy="7.96689116171743e-05" izz="0.00011210414142136336" ixy="1.5657860381532163e-10" iyz="-2.7438068639805283e-05" ixz="3.0657525498280214e-10" />
+        </inertial>
+        <visual name="rotatori_suport_rigth_visual">
+            <origin xyz="-2.3092638912203257e-16 5.861977570020827e-16 -0.0020000000000000018" rpy="-3.944304526105064e-31 -3.6977854932234876e-31 1.5707963267948963" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/rotatori_suport_rigth.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="rotatori_suport_rigth_collision">
+            <origin xyz="-2.3092638912203257e-16 5.861977570020827e-16 -0.0020000000000000018" rpy="-3.944304526105064e-31 -3.6977854932234876e-31 1.5707963267948963" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/rotatori_suport_rigth.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+
+
+    <link name="road_left">
+        <inertial>
+            <origin xyz="0 0 -0.013999997918070264" rpy="0.0 -0.0 0.0" />
+            <mass value="0.3614984125144465" />
+            <inertia ixx="7.236692462675356e-05" iyy="7.236692463010244e-05" izz="0.00010732079109369158" ixy="3.3603255944047293e-80" iyz="-2.168404344971009e-19" ixz="-1.734723475976807e-18" />
+        </inertial>
+        <visual name="road_left_visual">
+            <origin xyz="-4.973799150320702e-16 -8.881784197001253e-18 -0.013999997918070264" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/road_left.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="road_left_collision">
+            <origin xyz="-4.973799150320702e-16 -8.881784197001253e-18 -0.013999997918070264" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/road_left.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="road_rigth">
+        <inertial>
+            <origin xyz="0 0 -0.013999997918070264" rpy="0.0 -0.0 0.0" />
+            <mass value="0.3614984125144465" />
+            <inertia ixx="7.236692462675529e-05" iyy="7.236692463011112e-05" izz="0.00010732079109369679" ixy="3.3603255944047293e-80" iyz="-2.168404344971009e-19" ixz="-2.6020852139652106e-18" />
+        </inertial>
+        <visual name="road_rigth_visual">
+            <origin xyz="-5.684341886080802e-16 2.6645352591003756e-17 -0.013999997918070833" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/road_rigth.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="road_rigth_collision">
+            <origin xyz="-5.684341886080802e-16 2.6645352591003756e-17 -0.013999997918070833" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/road_rigth.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+
+
+    <link name="base_link">
+        <inertial>
+            <origin xyz="1.0416063651813322e-05 -0.0990788628779701 -0.04486487968208902" rpy="0.0 0.0 0.0" />
+            <mass value="40.76877140504577" />
+            <inertia ixx="0.370897302830673" iyy="0.7646152174799792" izz="1.0695799673956226" ixy="-7.564105720085675e-05" iyz="-0.010092334706648312" ixz="1.7270616578606978e-06" />
+        </inertial>
+        <visual name="base_link_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/base_link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="base_link_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/base_link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+
+
+    <joint name="base_link_Revolución-3" type="continuous">
+        <origin xyz="0.13849999999999957 0.06974999999999972 -0.08300800000000001" rpy="3.141592653589793 -1.5707963267948966 0" />
+        <parent link="base_link" />
+        <child link="wheel_left" />
+        <axis xyz="0.0 1.5496766561079998e-61 1.0" />
+    </joint>
+    <joint name="base_link_Revolución-4" type="continuous">
+        <origin xyz="-0.13849999999999943 0.06974999999999974 -0.08300800000000001" rpy="-1.110223024625148e-16 -1.5707963267948966 0" />
+        <parent link="base_link" />
+        <child link="wheel_rigth" />
+        <axis xyz="-0.0 1.5496766561079998e-61 1.0" />
+    </joint>
+
+
+
+    <joint name="base_link_Revolución-5" type="continuous">
+        <origin xyz="-0.11499999999999955 -0.13499999999999954 -0.095" rpy="3.141592653589793 -3.944304526105065e-31 -1.110223024625148e-16" />
+        <parent link="base_link" />
+        <child link="rotatori_suport_rigth" />
+        <axis xyz="0.0 0.0 1.0" />
+    </joint>
+    <joint name="base_link_Revolución-6" type="continuous">
+        <origin xyz="0.11499999999999964 -0.13499999999999956 -0.095" rpy="3.141592653589793 -3.944304526105065e-31 -1.110223024625148e-16" />
+        <parent link="base_link" />
+        <child link="rotatori_suport_left" />
+        <axis xyz="0.0 0.0 1.0" />
+    </joint>
+
+    
+    <joint name="rotatori_suport_left_Revolución-7" type="continuous">
+        <origin xyz="0.014137249999999995 0.025 0.0435" rpy="0 1.5707963267948966 0" />
+        <parent link="rotatori_suport_left" />
+        <child link="road_left" />
+        <axis xyz="0 -0.0 1" />
+    </joint>
+    <joint name="rotatori_suport_rigth_Revolución-8" type="continuous">
+        <origin xyz="0.014137249999999995 0.025 0.0435" rpy="0 1.5707963267948966 0" />
+        <parent link="rotatori_suport_rigth" />
+        <child link="road_rigth" />
+        <axis xyz="0 0 1" />
+    </joint>
+</robot>

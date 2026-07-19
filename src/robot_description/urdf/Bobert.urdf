@@ -1,0 +1,445 @@
+<?xml version='1.0' ?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="Bobert">
+
+    <material name="grey">
+        <color rgba="0.2 0.2 0.2 1"/>
+    </material>
+
+    <material name="green">
+        <color rgba="0 0.6 0 0.7"/>
+    </material>
+    
+    <material name="white">
+        <color rgba="1 1 1 0.7"/>
+    </material>
+
+    <material name="Black">
+        <color rgba="0.1 0.1 0.1 1"/>
+    </material>
+
+    
+    <material name="orange">
+        <color rgba="1 0.38 0.27 1"/>
+    </material>
+
+    <material name="blue">
+        <color rgba="0 0 0.55 1"/>
+    </material>
+
+
+    <link name="base_link">
+        <inertial>
+            <origin xyz="-43.547e-03 -0.033e-03 -46.787e-03" rpy="0.0 0.0 0.0" />
+            <mass value="11.793993" />
+            <inertia ixx="1.697e-01" iyy="1.958e-01" izz="3.335e-01" ixy="49603.106e-09" iyz="-836.534e-09" ixz="-1.095e-02" />
+        </inertial>
+        <visual name="base_link_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/base_link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="grey"/>
+        </visual>
+        <collision name="base_link_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/base_link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+
+
+    <link name="wheel_left_link">
+        <inertial>
+            <origin xyz="0 0 -1.819e-03" rpy="0.0 -0.0 0.0" />
+            <mass value="2911.821e-3" />
+            <inertia ixx="3.948e-03" iyy="3.948e-03" izz="6.576e-03" ixy="-21.63e-09" iyz="0.131e-09" ixz="-0.705e-09" />
+        </inertial>
+        <visual name="wheel_left_visual">
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/wheel_left.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="Black"/>
+        </visual>
+        <collision name="wheel_left_collision">
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/wheel_left.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+
+
+
+    <link name="wheel_rigth_link">
+        <inertial>
+            <origin xyz="0 0 1.819e-3" rpy="0.0 -0.0 0.0" />
+            <mass value="2.91188" />
+            <inertia ixx="3.948e-03" iyy="3.948e-03" izz="6.576e-03" ixy="-11.421e-09" iyz="10.676e-09" ixz="9.896e-09" />
+        </inertial>
+        <visual name="wheel_rigth_visual">
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/wheel_rigth.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="Black"/>
+        </visual>
+        <collision name="wheel_rigth_collision">
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/wheel_rigth.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>   
+
+
+
+    
+    <link name="rotatori_suport_left_link">
+        <inertial>
+            <origin xyz="16.428e-03 0 21.621e-03" rpy="0.0 -0.0 0.0" />
+            <mass value="43.579e-03" />
+            <inertia ixx="17929.773e-09" iyy="18956.841e-09" izz="23058.383e-09" ixy="-1.053e-09" iyz="0.047e-09" ixz="-5350.102e-09" />
+        </inertial>
+        <visual name="rotatori_suport_left_visual">
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/rotatory_suport_left.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="rotatori_suport_left_collision">
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/rotatory_suport_left.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link> 
+
+
+
+    <link name="rotatori_suport_rigth_link">
+        <inertial>
+            <origin xyz="16.428e-03 0 21.621e-03" rpy="0.0 0 0.0" />
+            <mass value="43.579e-03" />
+            <inertia ixx="17929.773e-09" iyy="18956.841e-09" izz="23058.383e-09" ixy="-1.053e-09" iyz="0.047e-09" ixz="-5350.102e-09" />
+        </inertial>
+        <visual name="rotatori_suport_rigth_visual">
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/rotatory_suport_rigth.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="rotatori_suport_rigth_collision">
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/rotatory_suport_rigth.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+
+     <link name="road_left_link">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0.0 -0.0 0.0" />
+            <mass value="82.503e-03" />
+            <inertia ixx="13380.147e-09" iyy="13380.149e-09" izz="17712.794e-09" ixy="0" iyz="0" ixz="0" />
+        </inertial>
+        <visual name="road_left_visual">
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/road_left.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="Black"/>
+        </visual>
+        <collision name="road_left_collision">
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/road_left.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+
+    <link name="road_rigth_link">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0.0 -0.0 0.0" />
+            <mass value="82.503e-03" />
+            <inertia ixx="13380.147e-09" iyy="13380.149e-09" izz="17712.794e-09" ixy="0" iyz="0" ixz="0" />
+        </inertial>
+        <visual name="road_rigth_visual">
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/road_rigth.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="Black"/>
+        </visual>
+        <collision name="road_rigth_collision">
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://robot_description/meshes/road_rigth.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+
+    <link name="Lidar_link">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0.0 -0.0 0.0" />
+            <mass value="0.01" />
+            <inertia ixx="0.0001" iyy="0.0001" izz="0.0001" ixy="0" iyz="0" ixz="0" />
+        </inertial>
+        <visual name="Lidar_visual">
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <cylinder radius="33e-03" length="21.0e-03"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <collision name="Lidar_collision">
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <cylinder radius="66e-03" length="21.0e-03"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="imu_link"/>
+
+
+    <gazebo reference="base_link">
+        <mu1>200</mu1>
+        <mu2>200</mu2>
+        <kp>1000000</kp>
+        <kd>1</kd>
+    </gazebo>
+
+    <gazebo reference="wheel_left_link">
+        <mu1>200</mu1>
+        <mu2>200</mu2>
+        <kp>1000000</kp>
+        <kd>1</kd>
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+
+    <gazebo reference="wheel_rigth_link">
+        <mu1>200</mu1>
+        <mu2>200</mu2>
+        <kp>1000000</kp>
+        <kd>1</kd>
+    </gazebo>
+
+    
+    <gazebo reference="rotatori_suport_left_link">
+        <mu1>0.1</mu1>
+        <mu2>0.1</mu2>
+        <kp>1000000</kp>
+        <kd>1</kd>
+    </gazebo>
+
+    <gazebo reference="rotatori_suport_rigth_link">
+        <mu1>0.1</mu1>
+        <mu2>0.1</mu2>
+        <kp>1000000</kp>
+        <kd>1</kd>
+    </gazebo>
+
+
+    <gazebo reference="road_left_link">
+        <mu1>0.1</mu1>
+        <mu2>0.1</mu2>
+        <kp>1000000</kp>
+        <kd>1</kd>
+    </gazebo>
+
+    <gazebo reference="road_rigth_link">
+        <mu1>0.1</mu1>
+        <mu2>0.1</mu2>
+        <kp>1000000</kp>
+        <kd>1</kd>
+    </gazebo>
+
+    <gazebo reference="Lidar_link">
+        <mu1>0.1</mu1>
+        <mu2>0.1</mu2>
+        <kp>1000000</kp>
+        <kd>1</kd>
+    </gazebo>
+
+
+    <joint name="base_link_wheel_left_joint" type="continuous">
+        <origin xyz="69.75e-03 -163.00e-03 -83.008e-3" rpy="-1.5707963267948968 0 0" />
+        <parent link="base_link" />
+        <child link="wheel_left_link" />
+        <axis xyz="0 0 1" />
+        <dynamics damping="0.1" friction="0.1"/>
+    </joint>
+
+    <joint name="base_link_wheel_rigth_joint" type="continuous">
+        <origin xyz="69.75e-03 163.00e-03 -83.008e-3" rpy="-1.5707963267948968 0 0" />
+        <parent link="base_link" />
+        <child link="wheel_rigth_link" />
+        <axis xyz="0 0 1" />
+        <dynamics damping="0.1" friction="0.1"/>
+    </joint>
+
+    <joint name="base_link_rotatori_suport_left_joint" type="continuous">
+        <origin xyz="-135e-03 -115e-03 -93e-03" rpy="0 3.141592653589793 0" />
+        <parent link="base_link" />
+        <child link="rotatori_suport_left_link" />
+        <axis xyz="0 0 1" />
+    </joint>
+
+    <joint name="base_link_rotatori_suport_rigth_joint" type="continuous">
+        <origin xyz="-135e-03 115e-03 -93e-03" rpy="0 3.141592653589793 0" />
+        <parent link="base_link" />
+        <child link="rotatori_suport_rigth_link" />
+        <axis xyz="0 0 1" />
+    </joint>
+
+    <joint name="base_link_road_left_joint" type="continuous">
+        <origin xyz="25e-03 0 45.5e-03" rpy="-1.5707963267948968 3.141592653589793 0" />
+        <parent link="rotatori_suport_left_link" />
+        <child link="road_left_link" />
+        <axis xyz="0 0 1" />
+    </joint>
+
+    <joint name="base_link_road_rigth_joint" type="continuous">
+        <origin xyz="25e-03 0 45.5e-03" rpy="-1.5707963267948968 3.141592653589793 0" />
+        <parent link="rotatori_suport_rigth_link" />
+        <child link="road_rigth_link" />
+        <axis xyz="0 0 1" />
+    </joint>
+
+    <joint name="base_link_Lidar_joint" type="fixed">
+        <origin xyz="0 0 10.5e-03" rpy="0 0 0" />
+        <parent link="base_link" />
+        <child link="Lidar_link" />
+        <axis xyz="0 0 1" />
+    </joint>
+
+    <joint name="imu_joint" type="fixed">
+        <origin xyz="0.0 0 0.0" rpy="0 0 0" />
+        <parent link="base_link" />
+        <child link="imu_link" />
+        <axis xyz="1 0 0" />
+    </joint>
+
+    <gazebo>
+        <plugin name="two_wheeled_robot_diff_drive" filename="libgazebo_ros_diff_drive.so">
+    
+        <update_rate>100</update_rate>
+        
+        <!-- wheels -->
+        <left_joint>base_link_wheel_rigth_joint</left_joint>
+        <right_joint>base_link_wheel_left_joint</right_joint>
+    
+        <!-- kinematics -->
+        <wheel_separation>0.326</wheel_separation>
+        <wheel_diameter>0.16</wheel_diameter>
+    
+        <!-- limits -->
+        <max_wheel_torque>40</max_wheel_torque>
+        <max_wheel_acceleration>20.0</max_wheel_acceleration>
+    
+        <!-- Receive velocity commands on this ROS topic -->
+        <command_topic>cmd_vel</command_topic>
+    
+        <!-- output -->
+        <!-- When false, publish no wheel odometry data to a ROS topic -->
+        <publish_odom>true</publish_odom>
+    
+        <!-- When true, publish coordinate transform from odom to base_footprint -->
+        <!-- I usually use the robot_localization package to publish this transform -->  
+        <publish_odom_tf>true</publish_odom_tf>
+        
+        <!-- When true, publish coordinate transform from base_link to the wheels -->
+        <!-- The robot_state_publisher package is often used to publish this transform -->  
+        <publish_wheel_tf>true</publish_wheel_tf>
+    
+        <odometry_topic>odom</odometry_topic>
+        <odometry_frame>odom_link</odometry_frame>
+        <robot_base_frame>base_link</robot_base_frame>
+    
+        <odometry_source>1</odometry_source>
+        <ros>
+            <remapping>odom:=wheel/odometry</remapping>
+        </ros>
+        </plugin>
+    </gazebo>
+
+    <gazebo>
+        <plugin name="gazebo_ros_joint_state_publisher"
+            filename="libgazebo_ros_joint_state_publisher.so">
+            <update_rate>100</update_rate>
+            <joint_name>base_link_wheel_left_joint</joint_name>
+            <joint_name>base_link_wheel_rigth_joint</joint_name>           
+            <joint_name>base_link_rotatori_suport_left_joint</joint_name>
+            <joint_name>base_link_rotatori_suport_rigth_joint</joint_name>
+            <joint_name>base_link_road_left_joint</joint_name>
+            <joint_name>base_link_road_rigth_joint</joint_name>
+        </plugin>
+    </gazebo>
+
+
+    <gazebo reference="Lidar_link">
+        <sensor name="lidar" type="ray">
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>20</update_rate>
+        <ray>
+            <scan>
+            <horizontal>
+                <samples>120</samples>
+                <resolution>1.000000</resolution>
+                <min_angle>-1.57079</min_angle>
+                <max_angle>1.57079</max_angle>
+            </horizontal>
+            </scan>
+            <range>
+            <min>0.07</min>
+            <max>5.0</max>
+            <resolution>0.015</resolution>
+            </range>
+            <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+            </noise>
+        </ray>
+        <plugin name="scan" filename="libgazebo_ros_ray_sensor.so">
+            <ros>
+            <remapping>~/out:=laser_scan</remapping>
+            </ros>
+            <output_type>sensor_msgs/LaserScan</output_type>
+            <frame_name>Lidar_link</frame_name>
+        </plugin>
+        </sensor>
+    </gazebo>
+
+
+    <gazebo reference="imu_link">
+        <gravity>true</gravity>
+        <sensor name="imu_sensor" type="imu">
+        <always_on>true</always_on>
+        <update_rate>100</update_rate>
+        <visualize>true</visualize>
+        <topic>imu_data</topic>
+        <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+            <topicName>imu_data</topicName>
+            <bodyName>imu_link</bodyName>
+            <updateRateHZ>10.0</updateRateHZ>
+            <gaussianNoise>0.005</gaussianNoise>
+            <xyzOffset>0 0 0</xyzOffset>
+            <rpyOffset>0 0 0</rpyOffset>
+            <frameName>imu_link</frameName>
+            <initialOrientationAsReference>true</initialOrientationAsReference>
+        </plugin>
+        <pose>0 0 0 0 0 0</pose>
+        </sensor>
+    </gazebo>
+
+</robot>
