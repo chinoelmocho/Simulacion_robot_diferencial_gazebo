@@ -179,9 +179,9 @@ En RViz:
   Sugerencias: robot en RViz, robot en Gazebo, mapa generado con SLAM, Nav2 navegando y evitando obstáculos.
 -->
 
-| Navegacion Experiemtal | Simulación en Gazebo | Funcionamiento | Robot |
-|:---:|:---:|:---:|:---:|
-| ![RViz](docs/images/function.gif) |  ![Gazebo](docs/images/gazebo.png)  |![Mapa](docs/images/robot.gif)  |  ![Nav2](docs/images/robot.jpg)  |
+| Navegacion Experiemtal |  Funcionamiento |
+|:---:|:---:|
+| ![RViz](docs/images/function.gif)  |![Mapa](docs/images/robot.gif)  | 
 
 ## Notas y pendientes conocidos
 
