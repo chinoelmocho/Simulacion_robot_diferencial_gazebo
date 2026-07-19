@@ -181,7 +181,7 @@ En RViz:
 
 | Robot en RViz | Simulación en Gazebo | Mapa (SLAM) | Nav2 navegando |
 |:---:|:---:|:---:|:---:|
-| <!-- ![RViz](docs/images/rviz.png) --> | <!-- ![Gazebo](docs/images/gazebo.png) --> | <!-- ![Mapa](docs/images/mapa.png) --> | <!-- ![Nav2](docs/images/nav2.png) --> |
+| <!-- ![RViz](docs/images/rviz.png) --> |  ![Gazebo](docs/images/gazebo.png)  | <!-- ![Mapa](docs/images/mapa.png) --> | <!-- ![Nav2](docs/images/nav2.png) --> |
 
 ## Notas y pendientes conocidos
 
